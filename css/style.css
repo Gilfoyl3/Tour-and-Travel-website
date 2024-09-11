@@ -14,10 +14,6 @@
     transition: all .2s linear;
  }
 
-*{
-   outline: 1px solid red;
-}
-
  *::selection{
       background:var(--orange);
       color:#fff;
