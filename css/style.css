@@ -14,6 +14,10 @@
     transition: all .2s linear;
  }
 
+*{
+   outline: 1px solid red;
+}
+
  *::selection{
       background:var(--orange);
       color:#fff;
@@ -24,6 +28,10 @@
       overflow-x: hidden;
       scroll-padding-top: 6rem;
       scroll-behavior: smooth;
+   }
+
+   body{
+      min-height: 100vh;
    }
 
    section{
@@ -72,6 +80,7 @@
       align-items: center;
       justify-content: space-between;
       padding:2rem 9%;
+     
    }
 
    header .logo{
@@ -294,6 +303,10 @@ header .search-bar-container.active{
    background: var(--orange);
 }
 
+.book {
+   margin-top: 5rem;
+}
+
 .book .row{
    display: flex;
    flex-wrap: wrap;
@@ -390,10 +403,19 @@ header .search-bar-container.active{
    text-decoration: line-through;
 }
 
+
+.services {
+   margin-top: 100rem;
+ 
+   /* transform: translateY(10rem); */
+}
+
+
 .services .box-container{
    display: flex;
    flex-wrap: wrap;
    gap:1.5rem;
+   min-height: 100vh;
 }
 
 .services .box-container .box{
@@ -423,6 +445,11 @@ header .search-bar-container.active{
 .services .box-container .box:hover{
    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
 }
+
+.gallery {
+ margin-top: 5rem;
+}
+
 
 .gallery .box-container{
    display: flex;
@@ -507,6 +534,11 @@ header .search-bar-container.active{
    font-size: 1.7rem;
 }
 
+.contact {
+margin-top: 5rem;
+
+}
+
 .contact .row{
    display: flex;
    flex-wrap: wrap;
@@ -553,6 +585,7 @@ header .search-bar-container.active{
 
 .brand-container{
    text-align: center;
+   overflow: hidden;
 }
 
 .footer{
@@ -626,7 +659,9 @@ header .search-bar-container.active{
    html{
       font-size: 55%;
    }
+   
 }
+
 
 @media (max-width:991px){
 
